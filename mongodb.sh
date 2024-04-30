@@ -3,4 +3,4 @@ yum install mongodb-org -y
 # update local IP address
 systemctl enable mongod
 
-systemctl start mongod
+systemctl restart mongod
