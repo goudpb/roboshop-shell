@@ -3,6 +3,7 @@ cp  cart.service /etc/systemd/system/cart.
 yum module disable nodejs -y
 yum module enable nodejs:18 -y
 
+
 yum install nodejs -y
 useradd roboshop
 mkdir /app
