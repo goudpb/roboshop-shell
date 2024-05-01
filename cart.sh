@@ -1,4 +1,4 @@
-cp  cart.service /etc/systemd/system/cart.
+cp  cart.service /etc/systemd/system/cart.service
 
 yum module disable nodejs -y
 yum module enable nodejs:18 -y
