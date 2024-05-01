@@ -1,4 +1,4 @@
-cp  user.service /etc/systemd/system/user.
+cp  user.service /etc/systemd/system/user.service
 cp mongo.repo /etc/yum.repos.d/mongo.repo
 
 yum module disable nodejs -y
