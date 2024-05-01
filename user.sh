@@ -7,7 +7,7 @@ yum module enable nodejs:18 -y
 yum install nodejs -y
 useradd roboshop
 mkdir /app
-curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/user.zip
+curl -o /tmp/user.zip https://roboshop-artifacts.s3.amazonaws.com/user.zip
 cd /app
 unzip /tmp/user.zip
 npm install
