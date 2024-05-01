@@ -13,6 +13,7 @@ cd /app
 unzip /tmp/catalogue.zip
 npm install
 yum install mongodb-org-shell -y
+
 mongo --host  mongodb.devopsb74.shop </app/schema/catalogue.js
 systemctl daemon-reload
 systemctl enable catalogue
