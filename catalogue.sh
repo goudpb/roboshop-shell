@@ -1,4 +1,4 @@
-cp  catalogue.service /etc/systemd/system/catalogue
+cp catalogue.service /etc/systemd/system/catalogue
 cp mongo.repo /etc/yum.repos.d/mongo.repo
 
 yum module disable nodejs -y
