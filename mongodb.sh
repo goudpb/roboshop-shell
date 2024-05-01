@@ -1,6 +1,5 @@
 cp mongo.repo /etc/yum.repos.d/mongo.repo
 yum install mongodb-org -y
-# update local IP address
+#update host IP
 systemctl enable mongod
-
 systemctl restart mongod

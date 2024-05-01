@@ -1,14 +1,15 @@
-cp catalogue.service /etc/systemd/system/cart.service
-cp mongo.repo /etc/yum.repos.d/mongo.repo
+cp  cart.service /etc/systemd/system/cart.
+
+yum module disable nodejs -y
+yum module enable nodejs:18 -y
+
 yum install nodejs -y
 useradd roboshop
 mkdir /app
-
 curl -o /tmp/cart.zip https://roboshop-artifacts.s3.amazonaws.com/cart.zip
 cd /app
 unzip /tmp/cart.zip
 npm install
-
 systemctl daemon-reload
 systemctl enable cart
-systemctl start cart
+systemctl restart cart
